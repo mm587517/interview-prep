@@ -7,7 +7,7 @@ export class TreeNode {
     this.data = data;
   }
 
-  private left: TreeNode;
+  private left: any;
   public getLeft(): TreeNode {
     return this.left;
   }
@@ -15,7 +15,7 @@ export class TreeNode {
     this.left = node;
   }
 
-  private right: TreeNode;
+  private right: any;
   public getRight(): TreeNode {
     return this.right;
   }
@@ -31,7 +31,7 @@ export class TreeNode {
 }
 
 export class BinarySearchTree {
-  private root: TreeNode;
+  private root: any;
   public getRoot(): TreeNode {
     return this.root;
   }
@@ -83,5 +83,6 @@ export class BinarySearchTree {
         }
       }
     }
+    return false;
   }
 }
